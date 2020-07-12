@@ -7,11 +7,10 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: configure
+    - name: Build Homework
       run: |
         cd CCGHomework
         mkdir build
         cd build
         cmake ..
-    - name: build
-      run: cmake --build build
+        cmake --build build
