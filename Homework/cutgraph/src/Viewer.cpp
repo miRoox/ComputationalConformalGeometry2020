@@ -2,7 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#ifdef MAC_OS
+#include <GLUT/glut.h>
+#else
 #include <GL/glut.h>
+#endif // MAC_OS
 
 #include "viewer/Arcball.h" /*  Arc Ball  Interface         */
 #include "CutGraphMesh.h"

@@ -32,7 +32,7 @@ resources               -- Some resources needed.
 > E.x. I create a folder `projects` in `C:/`, then unzip the source code there.
 
 3. Configure and generate the project for Visual Studio.
-  
+
 > ``` bash
 > cd CCGHomework
 > mkdir build
@@ -55,3 +55,25 @@ resources               -- Some resources needed.
 > If you can see the following results, then it means that you have finished the cut graph algorithm. 
 > 
 > ![Cut graph of torus](resources/torus_cut_graph.png) ![Cut graph of eight](resources/eight_cut_graph.png)
+
+### Linux & Mac
+
+1. Build and compile the code.
+
+> ``` bash
+> cd CCGHomework
+> mkdir build
+> cd build
+> cmake ..
+> make && make install
+> ```
+
+2. Run the executable program.
+
+> ``` bash
+> cd ../bin/
+> ./CutGraph ../data/torus.m
+> ./CutGraph ../data/eight.m 
+> ```
+
+

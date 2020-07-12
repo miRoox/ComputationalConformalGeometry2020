@@ -9,9 +9,9 @@
 #ifndef _ARCBALL_H_
 #define _ARCBALL_H_
 
-#include "../geometry/Point.h"
-#include "../geometry/Point2.h"
-#include "../geometry/quat.h"
+#include "../Geometry/Point.h"
+#include "../Geometry/Point2.h"
+#include "../Geometry/Quat.h"
 
 namespace MeshLib
 {

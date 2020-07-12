@@ -9,7 +9,7 @@
 #ifndef _MESHLIB_HALFEDGE_H_
 #define _MESHLIB_HALFEDGE_H_
 
-#include  <assert.h>
+#include <assert.h>
 #include <math.h>
 #include <string>
 #include "Edge.h"
