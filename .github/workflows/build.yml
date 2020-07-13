@@ -18,6 +18,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
+    - name: Install Libs on Ubuntu
+      if: ${{ startsWith(matrix.os, 'ubuntu') }}
+      run: |
+        sudo apt-get update
+        sudo apt-get install build-essential libgl1-mesa-dev
+        sudo apt-get install freeglut3-dev
+        sudo apt-get install libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev
+        sudo apt-get install meshlab
     - name: Build Homework
       run: |
         cd CCGHomework
