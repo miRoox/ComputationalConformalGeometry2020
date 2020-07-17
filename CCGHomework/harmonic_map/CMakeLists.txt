@@ -1,5 +1,7 @@
 project(HarmonicMap)
 
+set(CMAKE_CXX_STANDARD 11)
+
 if(APPLE)
   add_definitions(-DMAC_OS)
 endif(APPLE)
