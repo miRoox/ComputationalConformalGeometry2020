@@ -26,3 +26,4 @@ endif(MSVC)
 
 # Add module
 add_subdirectory("cutgraph")
+add_subdirectory("harmonic_map")
